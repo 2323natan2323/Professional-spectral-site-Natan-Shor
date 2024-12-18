@@ -4,7 +4,24 @@
  */
 
 
-
+@media only screen and (max-width: 768px) {
+    /* מרכז את התמונה במובייל */
+    #two .spotlight .image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto; /* מרכז את התמונה */
+    }
+    
+    /* מבטל את השפעת הסימנים במובייל */
+    body {
+        font-family: 'Heebo', sans-serif; /* מוודא שהגופן הנכון מיושם */
+    }
+    
+    p {
+        text-align: right; /* מוודא שהטקסט מיושר נכון */
+    }
+}
 
 
 
