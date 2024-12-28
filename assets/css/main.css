@@ -4008,3 +4008,19 @@ input, select, textarea {
 		background-color: #1d242a;
 	}
 
+
+#banner h2 {
+    font-size: 36px;
+    margin: 0;
+}
+
+#banner p {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+#banner a {
+    font-size: 20px;
+    display: inline-block;
+    margin-top: 20px;
+}

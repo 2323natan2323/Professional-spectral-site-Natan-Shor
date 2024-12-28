@@ -19,38 +19,110 @@
 		<!-- Page Wrapper -->
 			<div id="page-wrapper">
 
-				<!-- Header -->
-					<header id="header" class="alt">
-						<h1><a href="index.html">נתן שור</a></h1>
-						<nav id="nav">
-							<ul>
-								<li class="special">
-									<a href="#menu" class="menuToggle"><span>תפריט</span></a>
-									<div id="menu">
-			<ul style="list-style-type: none; padding: 0; text-align: right;">
-     <li><a href="index.html" style="font-size: 24px; margin-bottom; color: black;: 10px;">בית</a></li>
-    <li><a href="generic.html" style="font-size: 24px; margin-bottom; color: black; : 10px;">הטיול לברלין</a></li>
-    <li><a href="elements.html" style="font-size: 24px; color: black;">צרו קשר</a></li>
-</ul>
+	<!-- Header -->
+<header id="header" class="alt">
+    <h1><a href="index.html">נתן שור</a></h1>
+    <nav id="nav">
+        <ul>
+            <li class="special">
+                <a href="#menu" class="menuToggle"><span>תפריט</span></a>
+                <div id="menu">
+                    <ul style="list-style-type: none; padding: 0; text-align: right;">
+                        <li><a href="index.html" style="font-size: 24px; margin-bottom; color: black;: 10px;">דף הבית</a></li>
+                        <li><a href="generic.html" style="font-size: 24px; margin-bottom: 10px; color: black;">הטיול לברלין</a></li>
+                        <li><a href="elements.html" style="font-size: 24px; color: black;">צרו קשר</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </nav>
+</header>
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap" rel="stylesheet">
 
-									</div>
-								</li>
-							</ul>
-						</nav>
-					</header>
-					
-					<link rel="preconnect" href="https://fonts.googleapis.com">
-					<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-					<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap" rel="stylesheet">
 <!-- Banner -->
 <section id="banner">
     <div class="inner">
-        <h2 style="font-size: 36px;">נתן שור</h2>
-        <p style="font-size: 22px;">QA קצת על עצמי והדרך ל<br /></p>
-        <a href="#one" class="more scrolly" style="font-size: 20px;">ראה עוד</a>
+<h2 style="font-size: 36px;">נתן שור</h2>
+<p class="about-me" style="text-align: center; font-size: 20px;">קצת על עצמי</p>
+<p class="qa-path" style="text-align: center; font-size: 20px;">QA-והדרך ל</p>
+
+
+
+        <a href="#one" class="more scrolly">ראה עוד</a>
     </div>
 </section>
+
+<style>
+    /* עבור כל המסכים */
+    #banner {
+        display: flex;
+        justify-content: center; /* מרכז את התוכן אופקית */
+        align-items: center; /* מרכז את התוכן אנכית */
+        height: 100vh; /* גובה של 100% מהגובה של המסך */
+        text-align: center; /* כל הטקסט ממורכז */
+        padding: 0 10px; /* padding אחיד */
+    }
+
+    #banner .inner {
+        max-width: 800px; /* מגביל את רוחב התוכן */
+        width: 100%;
+    }
+
+    /* הגדרת גודל הפונט עבור כותרת וקטעים */
+    #banner h2 {
+        font-size: 36px;
+        margin: 0;
+    }
+
+    #banner .about-me,
+    #banner .qa-path {
+        font-size: 24px; /* גודל אחיד לפסקאות */
+        margin: 10px 0; /* מרווח אחיד בין הפסקאות */
+    }
+
+    /* עבור הלינק "ראה עוד" */
+    #banner a {
+        font-size: 20px;
+        display: inline-block;
+        margin-top: 20px;
+    }
+
+    /* עבור מסכים קטנים מ-768px (מובייל) */
+    @media screen and (max-width: 768px) {
+        #banner h2 {
+            font-size: 24px; /* גודל הכותרת במובייל */
+        }
+
+        #banner .about-me,
+        #banner .qa-path {
+            font-size: 22px; /* גודל הפסקאות במובייל */
+        }
+
+        #banner a {
+            font-size: 18px; /* גודל לינק במובייל */
+        }
+    }
+
+    /* עבור מסכים רחבים מאוד (מעל 1200px) */
+    @media screen and (min-width: 1200px) {
+        #banner h2 {
+            font-size: 36px; /* גודל קבוע למסכים גדולים */
+        }
+
+        #banner .about-me,
+        #banner .qa-path {
+            font-size: 24px; /* גודל קבוע לפסקאות */
+        }
+
+        #banner a {
+            font-size: 20px; /* גודל לינק קבוע */
+        }
+    }
+</style>
+
 
 
 
@@ -58,19 +130,48 @@
 <section id="one" class="wrapper style1 special">
     <div class="inner">
         <header class="major">
-            <h2 style="color: black; font-size: 36px;">!שלום לכולם<br /></h2>
-            <p style="color: black; font-size: 24px;">.(QA) שמי נתן שור, בן 25 מקרית ים. אספר לכם על עצמי, המסע שלי והדרך שבה הגעתי להיות בודק תוכנה</p>
+            <h2 style="color: black; font-size: 36px; margin-bottom: 10px;">!שלום לכולם</h2>
+            <span style="color: black; font-size: 24px; display: block; margin-bottom: 5px;">שמי נתן שור, בן 25 מקרית ים. אני כאן כדי לשתף אתכם במסע שלי</span>
+            <span style="color: black; font-size: 24px; display: block; margin-top: 0;">והדרך שהובילה אותי לעסוק</span>
+			<span style="color: black; font-size: 24px; display: block; margin-top: 0;">.(QA) בתחום בדיקות התוכנה</span>
+        
         </header>
     </div>
 </section>
 
-								
-								
-								</p>
-							</header>
-						
-						</div>
-					</section>
+<style>
+  /* באופן כללי המילה (QA) תהיה באותו קו */
+  .qa-text {
+    display: inline;
+  }
+
+  /* על מסכים קטנים (מובייל) המילה (QA) תעבור לשורה חדשה */
+  @media screen and (max-width: 768px) {
+    .qa-text {
+      display: block;
+      margin-top: 10px; /* רווח נוסף במובייל */
+    }
+  }
+</style>
+
+
+
+<style>
+  /* באופן כללי המילה (QA) תהיה באותו קו */
+  .qa-text {
+    display: inline;
+  }
+
+  /* על מסכים קטנים (מובייל) המילה (QA) תעבור לשורה חדשה */
+  @media screen and (max-width: 768px) {
+    .qa-text {
+      display: block;
+      margin-top: 10px; /* הוספתי רווח כדי לשמור על מקום בין השורות */
+    }
+  }
+</style>
+
+
 
 				<!-- Two -->
 					<section id="two" class="wrapper alt style2">
@@ -113,8 +214,8 @@
     <br> הרגשתי מן תשוקה וסקרנות מטורפת ללמוד עוד ולחקור אותו.
     <br> מאז ועד היום, כל בקשה או שאלה מהמשפחה שקשורה לעולם הטכנולוגיה וכמובן המחשבים, מופנית אליי. <br> הרצון שלי היה ללכת ללמוד מדעי המחשב כי זה היה הדבר האינטואיטיבי לעשות.<br> אך כאשר התחלתי את הלימודים, הבנתי שזה לא בשבילי. 
     <br> חשבתי רבות מה ניתן ללמוד כדי לתת מענה לרצון העז ללמוד ולהתפתח בכל מה שקשור למחשבים וכמובן לעזור ולתת ערך לאנשים.
-    <br> חיפשתי רבות באינטרנט, ובסוף הגעתי לתחום לימודי QA (בדיקת תוכנה).
-    <br> כעת, אני לומד אצל גל מטלון במכללה לאוטומציה ואני אשמח ללמוד ולהתפתח כמה שיותר ולתת ערך לצוות ולחברה שבה אעבוד.
+    <br> חיפשתי רבות באינטרנט, ובסוף הגעתי לתחום לימודי QA (הבטחת איכות תוכנה)
+    <br>וכעת, אני לומד אצל גל מטלון במכללה לאוטומציה ואני אשמח ללמוד ולהתפתח כמה שיותר ולתת ערך לצוות ולחברה שבה אעבוד.
 </p>
 
 
@@ -141,42 +242,57 @@
         </header>
         <ul class="features">
               <li class="icon fa-paper-plane" style="text-align: right;  background-color: #8a508f;">
-                <h3 style="text-align: right;">יכולת פתרון בעיות</h3>
-                <p dir="rtl" style="text-align: right;">אני יודע לחשוב מחוץ לקופסה ולמצוא פתרונות יצירתיים לבעיות מתעוררות, דבר שמסייע לי בתהליכי הבדיקה</p>
+                <h4 style="text-align: right;">ניסיון בבדיקות תוכנה ידניות</h4>
+                <p dir="rtl" style="text-align: right;">ניסיון רב בביצוע בדיקות ידניות על אפליקציות ואתרי אינטרנט, כולל ניתוח מערכות וכתיבת תסריטים ידניים, עם דגש על עבודה בתנאים משתנים, מה שמבטיח תשומת לב לפרטים ולהתמודדות עם כל אתגר.</p>
             </li>
            <li class="icon solid fa-laptop" style="text-align: right;  background-color: #b17aa2;">
-                <h3 style="text-align: right;">סבלנות והתמדה</h3>
-                <p dir="rtl" style="text-align: right;">אני מבין שביצוע בדיקות יכול להיות תהליך ארוך ומאתגר, ולכן אני מפגין סבלנות והתמדה כדי להבטיח שהתהליך יושלם בהצלחה</p>
+                <h4 style="text-align: right;">QA  הבנה וידע במתודולוגיות</h4>
+     <p dir="rtl" style="text-align: right; margin-bottom: 0;">בקיאות במתודולוגיות Waterfall ו-Agile.</p>
+<p dir="rtl" style="text-align: right; margin-top: 0;">כולל שיטות עבודה וארגון פרויקטים כדי לבצע בדיקות בצורה שיטתית ויעילה תוך שמירה על זמן ולוחות זמנים.</p>
+
+
             </li>
               <li class="icon solid fa-code" style="text-align: right;  background-color: #7b6992;">
-                <h3 style="text-align: right;">יכולת ניהול זמן</h3>
-                <p dir="rtl" style="text-align: right;">אני מסוגל לנהל את הזמן שלי בצורה יעילה, מה שמאפשר לי לבצע בדיקות רבות תוך שמירה על לוחות זמנים</p>
+                <h4 style="text-align: right;"> ניסיון בעבודה עם</h4>
+				            <h4 style="text-align: right;">SQL-ו CSS, HTML</h4>
+<p dir="rtl" style="text-align: right;">ניסיון ביצירת אתרים וכתיבת קוד בסיסי ב-HTML ו-CSS, כמו גם יכולת לבצע בדיקות פונקציונליות וויזואליות של אתרי אינטרנט. בנוסף, בעל ידע בשפת SQL עבור ביצוע שאילתות והבנת נתונים מתוך מסדי נתונים.</p>
+
             </li>
-        <li class="icon solid fa-headphones-alt" style="text-align: right;  background-color: #445881;">
-                <h3 style="text-align: right;">יכולת התמודדות עם שינויים</h3>
-                <p dir="rtl" style="text-align: right;">אני יכול להגיב מהר לשינויים ולמצבים חדשים, וזה עוזר לי להתמודד עם דרישות שונות בפרויקטים</p>
+            <li class="icon solid fa-headphones-alt" style="text-align: right; background-color: #445881;">
+                <h4 style="text-align: right;">הבנה מעמיקה של דפדפנים</h4>
+                <h4 style="text-align: right;">Multi-Platform Testing-ו</h4>
+               <p dir="rtl" style="text-align: right;">ניסיון בבדיקות דפדפנים כמו Chrome, Firefox ו-Edge, והתאמה לפלטפורמות שונות (Web, Mobile), כולל ביצוע התאמות והבנה כיצד אפליקציות ואתרים פועלים בסביבות מגוונות.</p>
+
             </li>
-            <li class="icon solid fa-flag" style="text-align: right;  background-color: #0d4771;">
-<br><br>            
-			<h3>שיתוף פעולה ועבודת צוות</h3>
-                <p>אני יודע לעבוד היטב בצוות עם מפתחים ומנהלי פרויקטים, וזה עוזר לנו להשיג תוצאות טובות יותר וליצור סביבת עבודה נעימה</p>
+    
+		  <li class="icon solid fa-flag" style="text-align: right;  background-color: #0d4771;">
+ <br><br><h4>ניסיון עם כלים לניהול תקלות</h4>
+	  <h4>ומעקב בדיקות</h4>
+       <p style="margin-bottom: 0; margin-top: 0;">.TestRail-ו Jira ניסיון בעבודה עם כלים כמו</p>
+<p style="margin-bottom: 0; margin-top: 0;">לניהול תקלות ותיעוד תוצאות הבדיקות בצורה</p>
+<p style="margin-bottom: 0; margin-top: 0;">מדוייקת תוך שמירה על מקצועיות והבטחת></p>
+<p style="margin-bottom: 0; margin-top: 0;">.הצגת נתונים ברורים ומובנים למעסיקים</p>
+
+
             </li>
             <li class="icon solid fa-star" style="text-align: right;  background-color: #6a4c93;">
-                <h3>כישורי תקשורת</h3>
-                <p>אני יודע להעביר מסרים ברורים, גם בכתב וגם בעל פה, דבר חיוני כדי להבהיר בעיות ולשתף מידע חשוב עם הצוות</p>
+                <h4>יכולת לעבוד בצוות ולהתנהל בתיאום עם צוותי פיתוח ומעצבים</h4>
+         <p style="margin-bottom: 0; margin-top: 0;">ניסיון בעבודה בצוותים דינמיים, תוך שמירה על קשר ושיתוף פעולה עם צוותי פיתוח, מעצבים ומנהלים, על מנת להבטיח תהליך עבודה חלק</p>
+<p style="margin-bottom: 0; margin-top: 0;">.ושהמוצר הסופי יגיע לאיכות גבוהה</p>
+
             </li>
         </ul>
     </div>
 </section>
 
 
-<li class="icon fa-flag">
+  <li class="icon fa-flag">
     <h3 style="color: white; font-size: 28px;">כיצד לשמור על קשר</h3>
     <p style="color: white; font-size: 20px;">:אני תמיד זמין לשיחה! אתם מוזמנים ליצור קשר דרך אחד מהלחצנים למטה</p>
-    <a href="mailto:natanshor1@gmail.com" class="contact-button" target="_blank">שלח אימייל</a>
-    <a href="https://www.linkedin.com/in/natan-shor1/" class="contact-button" target="_blank">צור קשר בלינקדאין</a>
-	<a href="https://github.com/2323natan2323/" class="contact-button" target="_blank">GitHub-צור קשר ב</a>
-
+    <a href="mailto:2323natan2323@gmail.com" class="contact-button" target="_blank">שלח אימייל</a>
+    <a href="https://www.linkedin.com/in/natan-shor1/" class="contact-button" target="_blank">LinkedIn-צור קשר ב</a>
+	<a href="tel:+972527491280" class="contact-button">צור קשר בטלפון</a>
+ <a href="https://github.com/2323natan2323/" class="contact-button" target="_blank">GitHub-ראה את העבודות שלי ב</a>
 </li>
 
 
@@ -207,7 +323,55 @@
     }
 </style>
 
+<!-- Scroll to Top Button -->
+<a href="#top" class="scroll-to-top">
+    <img src="images/up-arrow.png" alt="Scroll to Top" />
+</a>
 
+<!-- Scroll to Top Button CSS -->
+<style>
+    .scroll-to-top {
+        position: fixed;
+        bottom: 10px;
+        right: 20px;
+        display: none; /* הכפתור יהיה מוסתר בהתחלה */
+        cursor: pointer;
+        text-decoration: none; /* מסיר קו תחתי */
+        border: none; /* מסיר גבולות */
+        outline: none; /* מסיר מסגרת לחיצה */
+    }
+
+    .scroll-to-top img {
+        width: 60px; /* הגדלת רוחב התמונה */
+        height: auto; /* שמירה על פרופורציות התמונה */
+        border-radius: 50%; /* הופך את התמונה לעגולה */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* מוסיף צל רך */
+        transition: transform 0.3s ease; /* אפקט מעבר חלק */
+    }
+
+    .scroll-to-top img:hover {
+        transform: scale(1.2); /* הגדלה במעבר עכבר */
+    }
+</style>
+
+<!-- Scroll to Top Button JavaScript -->
+<script>
+    // הצגת הלחצן כשמגלגלים למטה
+    window.onscroll = function() {
+        var button = document.querySelector('.scroll-to-top');
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            button.style.display = "block"; // מציג את הלחצן
+        } else {
+            button.style.display = "none"; // מסיר את הלחצן כשהתוכן על גבי הדף
+        }
+    };
+
+    // גלילה למעלה בלחיצה על הכפתור
+    document.querySelector('.scroll-to-top').addEventListener('click', function(e) {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+</script>
 
 
 

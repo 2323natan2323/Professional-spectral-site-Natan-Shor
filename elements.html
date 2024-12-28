@@ -11,42 +11,33 @@
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap" rel="stylesheet">
     <style>
         .icon.fa-flag {
-            text-align: center; /* מרכז את הטקסט */
-            background-color: #10ADA2 ; /* צבע הרקע אחיד כחול */
-            padding: 20px; /* ריווח פנימי */
-            border-radius: 10px; /* קצוות מעוגלים */
+            text-align: center;
+            background-color: #027aff;
+            padding: 20px;
+            border-radius: 10px;
         }
-        
+
         .contact-button {
             display: inline-block;
             margin: 10px 0;
-            padding: 15px 30px; /* ריווח פנימי של הכפתורים */
-            color: black; /* צבע המלל בלחצן */
-            background-color: #10ADA2; /* צבע הכפתור כחול אחיד */
+            padding: 15px 30px;
+            color: white; /* צבע הטקסט בלחצן */
+            background-color: #00539f; /* צבע הרקע החדש */
             border-radius: 5px;
             text-decoration: none;
             transition: background-color 0.3s;
-            font-size: 20px; /* הגדלת גובה המלל בכפתורים */
+            font-size: 20px;
         }
 
         .contact-button:hover {
-            background-color: #10ADA2;
+            background-color: #003b6f; /* צבע הרקע בהובר */
         }
     </style>
-	
-	<!-- הוספת גופן Heebo מ-Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap" rel="stylesheet">
-	
-	
 </head>
 <body class="landing is-preload">
 
-    <!-- Page Wrapper -->
     <div id="page-wrapper">
 
-        <!-- Header -->
         <header id="header" class="alt">
             <h1><a href="index.html">צרו קשר איתי</a></h1>
             <nav id="nav">
@@ -55,7 +46,7 @@
                         <a href="#menu" class="menuToggle"><span>תפריט</span></a>
                         <div id="menu">
                             <ul style="list-style-type: none; padding: 0; text-align: right;">
-                                <li><a href="index.html" style="font-size: 24px; color: black;">בית</a></li>
+                                   <li><a href="index.html" style="font-size: 24px; margin-bottom; color: black;: 10px;">דף הבית</a></li>
                                 <li><a href="generic.html" style="font-size: 24px; color: black;">הטיול לברלין</a></li>
                                 <li><a href="elements.html" style="font-size: 24px; color: black;">צרו קשר</a></li>
                             </ul>
@@ -65,7 +56,6 @@
             </nav>
         </header>
 
-        <!-- Banner -->
         <section id="banner">
             <div class="inner">
                 <h2>צרו קשר איתי</h2>
@@ -75,19 +65,68 @@
             </div>
         </section>
 
-<li class="icon fa-flag">
-    <h3 style="color: white; font-size: 28px;">כיצד לשמור על קשר</h3>
-    <p style="color: white; font-size: 20px;">:אני תמיד זמין לשיחה! אתם מוזמנים ליצור קשר דרך אחד מהלחצנים למטה</p>
-    <a href="mailto:natanshor1@gmail.com" class="contact-button" target="_blank">שלח אימייל</a>
-    <a href="https://www.linkedin.com/in/natan-shor1/" class="contact-button" target="_blank">צור קשר בלינקדאין</a>
-	<a href="https://github.com/2323natan2323/" class="contact-button" target="_blank">GitHub-צור קשר ב</a>
+        <!-- הוסף את ה-ID עבור פרטי הקשר -->
+        <section id="contact-info">
+            <li class="icon fa-flag">
+                <h3 style="color: white; font-size: 28px;">כיצד לשמור על קשר</h3>
+                <p style="color: white; font-size: 20px;">אני תמיד זמין לשיחה! אתם מוזמנים ליצור קשר דרך אחד מהלחצנים למטה</p>
+                <a href="mailto:2323natan2323@gmail.com" class="contact-button" target="_blank">שלח אימייל</a>
+                <a href="https://www.linkedin.com/in/natan-shor1/" class="contact-button" target="_blank">LinkedIn-צור קשר ב</a>
+                <a href="tel:+972527491280" class="contact-button">צור קשר בטלפון</a>
+                <a href="https://github.com/2323natan2323/" class="contact-button" target="_blank">GitHub-ראה את העבודות שלי ב</a>
+            </li>
+        </section>
 
-</li>
+        <!-- Scroll to Top Button -->
+        <a href="#top" class="scroll-to-top">
+            <img src="images/up-arrow.png" alt="Scroll to Top" />
+        </a>
 
+        <!-- Scroll to Top Button CSS -->
+        <style>
+            .scroll-to-top {
+                position: fixed;
+                bottom: 10px;
+                right: 20px;
+                display: none; /* הכפתור יהיה מוסתר בהתחלה */
+                cursor: pointer;
+                text-decoration: none; /* מסיר קו תחתי */
+                border: none; /* מסיר גבולות */
+                outline: none; /* מסיר מסגרת לחיצה */
+            }
 
+            .scroll-to-top img {
+                width: 60px; /* הגדלת רוחב התמונה */
+                height: auto; /* שמירה על פרופורציות התמונה */
+                border-radius: 50%; /* הופך את התמונה לעגולה */
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* מוסיף צל רך */
+                transition: transform 0.3s ease; /* אפקט מעבר חלק */
+            }
 
+            .scroll-to-top img:hover {
+                transform: scale(1.2); /* הגדלה במעבר עכבר */
+            }
+        </style>
 
-        <!-- Scripts -->
+        <!-- Scroll to Top Button JavaScript -->
+        <script>
+            // הצגת הלחצן כשמגלגלים למטה
+            window.onscroll = function() {
+                var button = document.querySelector('.scroll-to-top');
+                if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                    button.style.display = "block"; // מציג את הלחצן
+                } else {
+                    button.style.display = "none"; // מסיר את הלחצן כשהתוכן על גבי הדף
+                }
+            };
+
+            // גלילה למעלה בלחיצה על הכפתור
+            document.querySelector('.scroll-to-top').addEventListener('click', function(e) {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        </script>
+
         <script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/jquery.scrollex.min.js"></script>
         <script src="assets/js/jquery.scrolly.min.js"></script>
