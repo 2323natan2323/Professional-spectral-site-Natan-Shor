@@ -107,25 +107,7 @@
                 transform: scale(1.2); /* הגדלה במעבר עכבר */
             }
         </style>
-
-        <!-- Scroll to Top Button JavaScript -->
-        <script>
-            // הצגת הלחצן כשמגלגלים למטה
-            window.onscroll = function() {
-                var button = document.querySelector('.scroll-to-top');
-                if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-                    button.style.display = "block"; // מציג את הלחצן
-                } else {
-                    button.style.display = "none"; // מסיר את הלחצן כשהתוכן על גבי הדף
-                }
-            };
-
-            // גלילה למעלה בלחיצה על הכפתור
-            document.querySelector('.scroll-to-top').addEventListener('click', function(e) {
-                e.preventDefault();
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-            });
-        </script>
+   
 
         <script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/jquery.scrollex.min.js"></script>
